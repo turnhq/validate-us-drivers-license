@@ -3,11 +3,19 @@
   "version": "0.0.1",
   "description": "Library to validate driver licenses against all 50 United States of America States",
   "main": "index.js",
+  "keywords": [
+    "us",
+    "drivers",
+    "license"
+  ],
   "scripts": {
     "test": "mocha",
     "size": "size-limit"
   },
-  "author": "Orlando Paredes Hamsho <hello@orlandohamsho.com>",
+  "author": {
+    "email": "hello@orlandohamsho.com",
+    "name": "Orlando Paredes Hamsho"
+  },
   "license": "MIT",
   "devDependencies": {
     "babel-loader": "^7.1.4",
@@ -17,14 +25,20 @@
     "chai": "^4.1.2",
     "mocha": "^5.2.0",
     "size-limit": "^0.18.1",
-    "webpack": "^4.10.2"
+    "rollup": "0.59.4",
+    "webpack": "^4.10.2",
+    "lodash": "^4.17.10"
+  },
+  "bugs": {
+    "url": "https://github.com/orlando-paredes-hamsho/validate-us-drivers-license/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orlando-paredes-hamsho/validate-us-drivers-license"
   },
   "size-limit": [
     {
       "path": "index.js"
     }
-  ],
-  "dependencies": {
-    "lodash": "^4.17.10"
-  }
+  ]
 }
