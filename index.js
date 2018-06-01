@@ -7,5 +7,3 @@ module.exports = {
   isValidUSLicense: isValidUSLicense,
   validateUSDriversLicense: validateUSDriversLicense
 };
-
-export default validateDriversLicense;

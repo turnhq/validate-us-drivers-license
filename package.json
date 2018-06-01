@@ -4,7 +4,8 @@
   "description": "Library to validate driver licenses against all 50 United States of America States",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "size": "size-limit"
   },
   "author": "Orlando Paredes Hamsho <hello@orlandohamsho.com>",
   "license": "MIT",
@@ -15,6 +16,15 @@
     "babel-preset-stage-0": "^6.24.1",
     "chai": "^4.1.2",
     "mocha": "^5.2.0",
+    "size-limit": "^0.18.1",
     "webpack": "^4.10.2"
+  },
+  "size-limit": [
+    {
+      "path": "index.js"
+    }
+  ],
+  "dependencies": {
+    "lodash": "^4.17.10"
   }
 }

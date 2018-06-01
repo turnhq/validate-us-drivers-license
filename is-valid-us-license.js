@@ -23,7 +23,7 @@ module.exports = function(license, state) {
   if (typeof license !== "string" || typeof state !== "string") return false;
   var validators = driversLicenseRegex[state];
   if (!validators) return false;
-  var reasons = validator
+  var reasons = validators
     .filter(function(val) {
       return !val.regex.test(license);
     })

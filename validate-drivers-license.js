@@ -31,7 +31,7 @@ module.exports = function(license, state) {
   }
   var validators = driversLicenseRegex[state];
   if (!validators) return { valid: false, reasons: ['Not a valid US State'] };;
-  var reasons = validator
+  var reasons = validators
     .filter(function(val) {
       return !val.regex.test(license);
     })

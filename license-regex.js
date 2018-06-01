@@ -469,5 +469,3 @@ module.exports = {
     },
   ],
 };
-
-export default driversLicenseRegex;
