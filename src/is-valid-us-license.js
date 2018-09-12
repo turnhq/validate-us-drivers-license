@@ -23,9 +23,10 @@ module.exports = function(license, state) {
   if (typeof license !== "string" || typeof state !== "string") return false;
   var validators = driversLicenseRegex[state];
   if (!validators) return false;
+  const cleanLicense = license.replace(/[\s-]/g, '');
   var reasons = validators
     .filter(function(val) {
-      return !val.regex.test(license);
+      return !val.regex.test(cleanLicense);
     })
     .map(function(val) {
       return val.description;
