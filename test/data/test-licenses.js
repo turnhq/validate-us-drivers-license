@@ -1,14 +1,14 @@
 var invalidLicenses = ['test']
 
-var sevenDigitLicense = ['1', '12', '123', '1234', '12345', '123456', '1234567'];
-var oneLetterThreeToSixNumbers = ['A123', 'A1234', 'A12345', 'A123456'];
-var twoLettersTwoToFiveNumbers = ['AB12', 'AB123', 'AB1234', 'AB12345'];
-var oneLetterEightNumbers = ['A12345678']
-var oneLetterNineNumbers = ['A123456789']
-var nineNumbers = ['123456789'];
-var eightNumbers = ['12345678'];
+var sevenDigitLicense = ['1', '12', '123', '1234', '12345', '123456', '1234567', '123-456-7', '123 456 7'];
+var oneLetterThreeToSixNumbers = ['A123', 'A1234', 'A12345', 'A123456', 'A-123-456', 'A12 345 6'];
+var twoLettersTwoToFiveNumbers = ['AB12', 'AB123', 'AB1234', 'AB12345', 'AB-12', 'AB-123', 'AB 1234', 'AB 123 45'];
+var oneLetterEightNumbers = ['A12345678', 'A-123-456-78', 'A 123 456 78'];
+var oneLetterNineNumbers = ['A123456789', 'A-123-456-789', 'A 123 456 789']
+var nineNumbers = ['123456789', '123-456-789', '123 456 789'];
+var eightNumbers = ['12345678', '123-456-78', '123 456 78'];
 var nineDigitLicense = [].concat(sevenDigitLicense, eightNumbers, nineNumbers);
-var oneLetterTwelveNumbers = ['A123456789012'];
+var oneLetterTwelveNumbers = ['A123456789012', 'A-123-456-789-012', 'A 123 456 789 012'];
 
 
 module.exports = {
@@ -70,7 +70,7 @@ module.exports = {
     validLicenses: [].concat(nineNumbers, '1234567', eightNumbers),
     invalidLicenses: [].concat(
       invalidLicenses, oneLetterThreeToSixNumbers, twoLettersTwoToFiveNumbers,
-      sevenDigitLicense.slice(0, sevenDigitLicense.length - 1)
+      sevenDigitLicense.slice(0, 6)
     )
   },
   HI: {
@@ -132,7 +132,7 @@ module.exports = {
     validLicenses: [].concat(eightNumbers, '1234567', '1234567A'),
     invalidLicenses: [].concat(
       invalidLicenses, oneLetterThreeToSixNumbers, twoLettersTwoToFiveNumbers,
-      sevenDigitLicense.slice(0, sevenDigitLicense.length - 1)
+      sevenDigitLicense.slice(0, 6)
     )
   },
   MD: {

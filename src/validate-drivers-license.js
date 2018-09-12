@@ -30,10 +30,11 @@ module.exports = function(license, state) {
     return { valid: false, reasons: ['License and State must be Strings'] };
   }
   var validators = driversLicenseRegex[state];
-  if (!validators) return { valid: false, reasons: ['Not a valid US State'] };;
+  if (!validators) return { valid: false, reasons: ['Not a valid US State'] };
+  const cleanLicense = license.replace(/[\s-]/g, '');
   var reasons = validators
     .filter(function(val) {
-      return !val.regex.test(license);
+      return !val.regex.test(cleanLicense);
     })
     .map(function(val) {
       return val.description;
