@@ -319,7 +319,7 @@ module.exports = {
     )
   },
   VA: {
-    validLicenses: [].concat(nineNumbers, 'A123456789', 'A1234567890', 'A12345678901'),
+    validLicenses: [].concat(nineNumbers, 'A123456789', 'A1234567890', 'A12345678901', 'T61473121'),
     invalidLicenses: [].concat(
       invalidLicenses, twoLettersTwoToFiveNumbers, oneLetterThreeToSixNumbers,
       sevenDigitLicense
