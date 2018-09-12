@@ -432,7 +432,7 @@ module.exports = {
   ],
   VA: [
     {
-      regex: /^[A-Z]{1}[0-9]{9,11}$/i,
+      regex: /^[A-Z]{1}[0-9]{8,11}$/i,
       description: 'License must be 1 letter followed by 9-11 numbers',
     },
     {
