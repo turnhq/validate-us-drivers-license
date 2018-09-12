@@ -5,18 +5,18 @@ var testLicenses = require('./data/test-licenses')
 
 var sampleLicense = '1234567'
 
-var testLicense = function(state, validLicenses, invalidLicenses) {
+var testLicense = function(state, validLicenses, invalidLicenses, lowercase = false) {
   var validLicenses = validLicenses || []
   var invalidLicenses = invalidLicenses || []
   describe(state + ' State', function() {
     _.forEach(validLicenses, function(license) {
       it('validateDriversLicense returns an object with valid = true for license' + license, function() {
-        expect(validateDriversLicense(license, state).valid).to.be.true
+        expect(validateDriversLicense(lowercase ? license.toLowerCase() : license, state).valid).to.be.true
       });
     })
     _.forEach(invalidLicenses, function(license) {
       it('validateDriversLicense returns an object with valid = false for license' + license, function() {
-        expect(validateDriversLicense(license, state).valid).to.be.false
+        expect(validateDriversLicense(lowercase ? license.toLowerCase() : license, state).valid).to.be.false
       });
     })
   });
@@ -92,6 +92,11 @@ describe('validateDriversLicense', function() {
   describe('Driver License State Regex', function() {
     _.forEach(testLicenses, function(regex, state) {
       testLicense(state, regex.validLicenses, regex.invalidLicenses)
+    })
+  })
+  describe('Driver License State Regex lowercase', function() {
+    _.forEach(testLicenses, function(regex, state) {
+      testLicense(state, regex.validLicenses, regex.invalidLicenses, true)
     })
   })
 });
