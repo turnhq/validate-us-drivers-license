@@ -1,7 +1,7 @@
-var driversLicenseRegex = require("./src/license-regex");
-var isValidUSLicense = require("./src/is-valid-us-license");
-var validateUSDriversLicense = require("./src/validate-drivers-license");
-var supportedStates = require("./src/supported-states");
+var driversLicenseRegex = require("./license-regex");
+var isValidUSLicense = require("./is-valid-us-license");
+var validateUSDriversLicense = require("./validate-drivers-license");
+var supportedStates = require("./supported-states");
 
 module.exports = {
   driversLicenseRegex: driversLicenseRegex,
