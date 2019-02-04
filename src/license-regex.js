@@ -369,6 +369,10 @@ module.exports = {
       regex: /^[0-9]{1,9}$/i,
       description: 'License must be 1-9 numbers',
     },
+    {
+      regex: /^[a-zA-Z0-9]{7}$/i,
+      description: 'License must be 7 alphanumeric characters',
+    }
   ],
   PA: [
     {

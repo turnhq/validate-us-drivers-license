@@ -1,6 +1,6 @@
 var expect = require('chai').expect
 var _ = require('lodash')
-var isValidUSLicense = require('../index').isValidUSLicense
+var isValidUSLicense = require('../src/index').isValidUSLicense
 var testLicenses = require('./data/test-licenses')
 
 var sampleLicense = '1234567'

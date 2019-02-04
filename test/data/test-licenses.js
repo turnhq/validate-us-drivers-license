@@ -3,6 +3,7 @@ var invalidLicenses = ['test']
 var sevenDigitLicense = ['1', '12', '123', '1234', '12345', '123456', '1234567', '123-456-7', '123 456 7'];
 var oneLetterThreeToSixNumbers = ['A123', 'A1234', 'A12345', 'A123456', 'A-123-456', 'A12 345 6'];
 var twoLettersTwoToFiveNumbers = ['AB12', 'AB123', 'AB1234', 'AB12345', 'AB-12', 'AB-123', 'AB 1234', 'AB 123 45'];
+var oneLetterSixNumbers = ['A123456'];
 var oneLetterEightNumbers = ['A12345678', 'A-123-456-78', 'A 123 456 78'];
 var oneLetterNineNumbers = ['A123456789', 'A-123-456-789', 'A 123 456 789']
 var nineNumbers = ['123456789', '123-456-789', '123 456 789'];
@@ -256,9 +257,10 @@ module.exports = {
     )
   },
   OR: {
-    validLicenses: [].concat(nineDigitLicense),
+    validLicenses: [].concat(nineDigitLicense, oneLetterSixNumbers),
     invalidLicenses: [].concat(
-      invalidLicenses, twoLettersTwoToFiveNumbers, oneLetterThreeToSixNumbers
+      invalidLicenses, oneLetterNineNumbers, oneLetterNineNumbers,
+      oneLetterTwelveNumbers
     )
   },
   PA: {
