@@ -14,8 +14,8 @@ var oneLetterTwelveNumbers = ['A123456789012', 'A-123-456-789-012', 'A 123 456 7
 
 module.exports = {
   AL: {
-    validLicenses: sevenDigitLicense,
-    invalidLicenses: [].concat(invalidLicenses, nineNumbers, eightNumbers)
+    validLicenses: [].concat(sevenDigitLicense, eightNumbers),
+    invalidLicenses: [].concat(invalidLicenses, nineNumbers)
   },
   AK: {
     validLicenses: sevenDigitLicense,
