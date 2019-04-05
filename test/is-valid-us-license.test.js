@@ -5,18 +5,23 @@ var testLicenses = require('./data/test-licenses')
 
 var sampleLicense = '1234567'
 
-var testLicense = function(state, validLicenses, invalidLicenses, lowercase = false) {
-  var validLicenses = validLicenses || []
-  var invalidLicenses = invalidLicenses || []
+var testLicense = function(
+  state, 
+  validLicenses = [], 
+  invalidLicenses = [], 
+  lowercase = false
+) {
   describe(state + ' State', function() {
-    _.forEach(validLicenses, function(license) {
-      it('isValidUSLicense returns for license' + license, function() {
-        expect(isValidUSLicense(lowercase ? license.toLowerCase() : license, state)).to.be.true
+    validLicenses.forEach(license => {
+      it('isValidUSLicense returns for license' + license, () => {
+        license = lowercase ? license.toLowerCase() : license;
+        expect(isValidUSLicense(license, state)).to.be.true
       });
     })
-    _.forEach(invalidLicenses, function(license) {
-      it('isValidUSLicense returns false for license' + license, function() {
-        expect(isValidUSLicense(lowercase ? license.toLowerCase() : license, state)).to.be.false
+    invalidLicenses.forEach(license => {
+      it('isValidUSLicense returns false for license' + license, () => {
+        license = lowercase ? license.toLowerCase() : license;
+        expect(isValidUSLicense(license, state)).to.be.false
       });
     })
   });

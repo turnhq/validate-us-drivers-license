@@ -11,8 +11,8 @@
 module.exports = {
   AL: [
     {
-      regex: /^[0-9]{1,7}$/i,
-      description: 'License must be 1-7 numbers',
+      regex: /^[0-9]{1,8}$/i,
+      description: 'License must be 1-8 numbers',
     },
   ],
   AK: [
