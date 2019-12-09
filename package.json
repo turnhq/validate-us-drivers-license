@@ -27,7 +27,7 @@
     "size-limit": "^0.18.1",
     "rollup": "0.59.4",
     "webpack": "^4.10.2",
-    "lodash": "^4.17.10"
+    "lodash": "^4.17.13"
   },
   "bugs": {
     "url": "https://github.com/orlando-paredes-hamsho/validate-us-drivers-license/issues"
