@@ -1,6 +1,6 @@
 {
   "name": "validate-us-drivers-license",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Library to validate driver licenses against all 50 United States of America States",
   "main": "src/index.js",
   "keywords": [
