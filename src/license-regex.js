@@ -472,4 +472,10 @@ module.exports = {
       description: 'License must be 9-10 numbers',
     },
   ],
+  PR: [
+    {
+      regex: /^([a-zA-Z0-9_-]){5,}$/,
+      description: 'License must be more than 5 characters'
+    }
+  ]
 };

@@ -13,6 +13,10 @@ var oneLetterTwelveNumbers = ['A123456789012', 'A-123-456-789-012', 'A 123 456 7
 
 
 module.exports = {
+  PR: {
+    validLicenses: [].concat(oneLetterEightNumbers, oneLetterNineNumbers),
+    invalidLicenses: [].concat(invalidLicenses, "A1", "A12", "A123")
+  },
   AL: {
     validLicenses: [].concat(sevenDigitLicense, eightNumbers),
     invalidLicenses: [].concat(invalidLicenses, nineNumbers)
