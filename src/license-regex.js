@@ -193,8 +193,8 @@ module.exports = {
   ],
   MA: [
     {
-      regex: /^[A-Z]{1}[0-9]{8}$/i,
-      description: 'License must be 1 letter followed by 8 numbers',
+      regex: /(^[A-Z]{1}[0-9]{8}$|^[A-Z]{2}[0-9]{7}$)/i,
+      description: 'License must be 1 letter followed by 8 numbers or 2 letters followed by 7 numbers',
     },
     {
       regex: /^[0-9]{9}$/i,
