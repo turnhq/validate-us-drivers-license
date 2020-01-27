@@ -286,8 +286,8 @@ module.exports = {
   ],
   NH: [
     {
-      regex: /^[0-9]{2}[A-Z]{3}[0-9]{5}$/i,
-      description: 'License must be 2 numbers followed by 3 letters followed by 5 numbers'
+      regex: /(^[0-9]{2}[A-Z]{3}[0-9]{5}$|^[A-Z]{3}[0-9]{8}$)/i,
+      description: 'License must be 2 numbers followed by 3 letters followed by 5 numbers OR 3 letters followed by 8 numnbers'
     },
   ],
   NJ: [
