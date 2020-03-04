@@ -382,8 +382,8 @@ module.exports = {
   ],
   RI: [
     {
-      regex: /^[0-9]{7}$/i,
-      description: 'License must be 7 numbers',
+      regex: /^[0-9]{7,8}$/i,
+      description: 'License must be 7 or 8 numbers without letters',
     },
     {
       regex: /^[A-Z]{1}[0-9]{6}$/i,
