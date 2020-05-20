@@ -178,7 +178,7 @@ module.exports = {
   MO: {
     validLicenses: [].concat(
       nineNumbers, 'A12345', 'A123456', 'A1234567', 'A12345678', 'A123456789',
-      'A123456R', '12345678AB', '123456789A'
+      'A123456R', '12345678AB', '123456789A', '176A109015'
     ),
     invalidLicenses: [].concat(
       invalidLicenses, twoLettersTwoToFiveNumbers,

@@ -245,6 +245,10 @@ module.exports = {
       regex: /^[0-9]{9}$/i,
       description: 'License must be 9 numbers',
     },
+    {
+      regex: /^[0-9]{1,3}[A-Z]{1}[0-9]{1,6}$/i,
+      description: 'License must be 3 numbers + 1 alfanumeric + 6 numbers',
+    },
   ],
   MT: [
     {
