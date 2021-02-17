@@ -13,13 +13,13 @@ var testLicense = function(
 ) {
   describe(state + ' State', function() {
     validLicenses.forEach(license => {
-      it('isValidUSLicense returns for license' + license, () => {
+      it('isValidUSLicense returns for license ' + license, () => {
         license = lowercase ? license.toLowerCase() : license;
         expect(isValidUSLicense(license, state)).to.be.true
       });
     })
     invalidLicenses.forEach(license => {
-      it('isValidUSLicense returns false for license' + license, () => {
+      it('isValidUSLicense returns false for license ' + license, () => {
         license = lowercase ? license.toLowerCase() : license;
         expect(isValidUSLicense(license, state)).to.be.false
       });
