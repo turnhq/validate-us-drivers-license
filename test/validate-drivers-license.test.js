@@ -10,12 +10,12 @@ var testLicense = function(state, validLicenses, invalidLicenses, lowercase = fa
   var invalidLicenses = invalidLicenses || []
   describe(state + ' State', function() {
     _.forEach(validLicenses, function(license) {
-      it('validateDriversLicense returns an object with valid = true for license' + license, function() {
+      it('validateDriversLicense returns an object with valid = true for license ' + license, function() {
         expect(validateDriversLicense(lowercase ? license.toLowerCase() : license, state).valid).to.be.true
       });
     })
     _.forEach(invalidLicenses, function(license) {
-      it('validateDriversLicense returns an object with valid = false for license' + license, function() {
+      it('validateDriversLicense returns an object with valid = false for license ' + license, function() {
         expect(validateDriversLicense(lowercase ? license.toLowerCase() : license, state).valid).to.be.false
       });
     })
