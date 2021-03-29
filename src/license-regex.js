@@ -11,10 +11,6 @@
 module.exports = {
   AL: [
     {
-      regex: /^[0-9]{1,8}$/i,
-      description: 'License must be 1-8 numbers',
-    },
-    {
       regex: /^\d{7,8}$/,
       description: 'NNNNNNNNN MinLength = 7 MaxLength = 8'
     },
@@ -25,18 +21,18 @@ module.exports = {
   ],
   AK: [
     {
-      regex: /^[0-9]{1,7}$/i,
-      description: 'License must be 1-7 numbers',
+      regex: /^\d{7}$/,
+      description: 'NNNNNNNN MinLength = 7 MaxLength = 7',
     },
   ],
   AZ: [
     {
-      regex: /^[A-Z]{1}[0-9]{1,8}$/i,
-      description: 'License must be 1 letter followed by 1-8 numbers',
-    },
-    {
       regex: /^[A-Z]{2}[0-9]{2,5}$/i,
       description: 'License must be 2 letters followed by 2-5 numbers',
+    },
+    {
+      regex: /^[A-Z]\d{8}$/i,
+      description: 'ANNNNNNNN MinLength = 9 MaxLength = 9',
     },
     {
       regex: /^[0-9]{9}$/i,
@@ -45,8 +41,8 @@ module.exports = {
   ],
   AR: [
     {
-      regex: /^[0-9]{4,9}$/i,
-      description: 'License must be 4-9 numbers',
+      regex: /^[0-9]{9}$/,
+      description: 'NNNNNNNNN MinLength = 9 MaxLength = 9',
     },
     {
       regex: /^[A-Z]\d{8}$/i,
@@ -272,7 +268,7 @@ module.exports = {
       description: 'License must be 9 numbers',
     },
     {
-      regex: /^[0-9]{1,3}[A-Z]{1}[0-9]{1,6}$/i,
+      regex: /^[0-9]{1,3}[A-Z]{1}[0-9]{6}$/i,
       description: 'License must be 3 numbers + 1 alfanumeric + 6 numbers',
     },
     {
@@ -549,10 +545,6 @@ module.exports = {
     },
   ],
   PR: [
-    {
-      regex: /^([a-zA-Z0-9_-]){5,}$/,
-      description: 'License must be more than 5 characters'
-    },
     {
       regex: /^\d{7,9}$/,
       description: 'NNNNNNNNN MinLength = 7 MaxLength = 9'

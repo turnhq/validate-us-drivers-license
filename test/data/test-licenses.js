@@ -22,28 +22,23 @@ var oneLetterTwelveNumbers = ['A123456789012', 'A-123-456-789-012', 'A 123 456 7
 
 module.exports = {
   PR: {
-    validLicenses: [].concat(oneLetterEightNumbers, oneLetterNineNumbers, sevenNumbers, eightNumbers, nineNumbers),
+    validLicenses: [].concat(sevenNumbers, eightNumbers, nineNumbers),
     invalidLicenses: [].concat(invalidLicenses, "A1", "A12", "A123")
   },
   AL: {
-    validLicenses: [].concat(sevenDigitLicense, eightNumbers, oneLetterSixNumbers, oneLetterSevenNumbers),
+    validLicenses: [].concat(sevenNumbers, eightNumbers, oneLetterSixNumbers, oneLetterSevenNumbers),
     invalidLicenses: [].concat(invalidLicenses, nineNumbers)
   },
   AK: {
-    validLicenses: sevenDigitLicense,
+    validLicenses: sevenNumbers,
     invalidLicenses: [].concat(invalidLicenses, nineNumbers, eightNumbers)
   },
   AZ: {
-    validLicenses: [].concat('A1', 'A12', 'A1234567').concat(
-      nineNumbers, twoLettersTwoToFiveNumbers, oneLetterThreeToSixNumbers,
-      oneLetterEightNumbers
-    ),
+    validLicenses: [].concat(nineNumbers, oneLetterEightNumbers),
     invalidLicenses: [].concat('A', 'AB').concat(invalidLicenses, sevenDigitLicense)
   },
   AR: {
-    validLicenses: [].concat('1234', '12345', '123456', '1234567').concat(
-      nineNumbers, eightNumbers, oneLetterEightNumbers
-    ),
+    validLicenses: [].concat(nineNumbers, oneLetterEightNumbers),
     invalidLicenses: [].concat('1', '12', '123', 'A', 'AB', '1234567890').concat(invalidLicenses)
   },
   CA: {
