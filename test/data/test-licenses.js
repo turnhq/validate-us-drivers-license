@@ -271,7 +271,7 @@ module.exports = {
     )
   },
   OR: {
-    validLicenses: [].concat(nineDigitLicense, oneLetterSixNumbers, '431ZD4', 'GAEYX0D', '94VKNF46', 'BDABFKAA9', ),
+    validLicenses: [].concat(sixNumbers, sevenNumbers, eightNumbers, nineNumbers, oneLetterSixNumbers, '431ZD4', 'GAEYX0D', '94VKNF46', 'BDABFKAA9', ),
     invalidLicenses: [].concat(
       invalidLicenses, oneLetterNineNumbers, oneLetterNineNumbers,
       oneLetterTwelveNumbers, 'BPO6M', 'TZD6QON4NB'

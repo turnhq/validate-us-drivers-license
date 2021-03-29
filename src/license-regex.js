@@ -408,8 +408,8 @@ module.exports = {
   ],
   OR: [
     {
-      regex: /^[0-9]{1,9}$/i,
-      description: 'License must be 1-9 numbers',
+      regex: /^[0-9]{5,9}$/i,
+      description: 'License must be 5-9 numbers',
     },
     {
       regex: /^[A-Z]\d{7}$/i,
