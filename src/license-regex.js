@@ -27,10 +27,6 @@ module.exports = {
   ],
   AZ: [
     {
-      regex: /^[A-Z]{2}[0-9]{2,5}$/i,
-      description: 'License must be 2 letters followed by 2-5 numbers',
-    },
-    {
       regex: /^[A-Z]\d{8}$/i,
       description: 'ANNNNNNNN MinLength = 9 MaxLength = 9',
     },
@@ -77,12 +73,8 @@ module.exports = {
   ],
   DE: [
     {
-      regex: /^[0-9]{1,7}$/i,
-      description: 'License must be 1-7 numbers',
-    },
-    {
-      regex: /^\d{3}$/,
-      description: 'NNN MinLength = 3 MaxLength = 3',
+      regex: /^\d{3,7}$/,
+      description: 'License must be 3-7 numbers',
     },
   ],
   DC: [
@@ -139,15 +131,11 @@ module.exports = {
   ],
   IL: [
     {
-      regex: /^[A-Z]{1}[0-9]{11,12}$/i,
-      description: 'License must be 1 letter followed by 11-12 numbers',
+      regex: /^[A-Z]{1}[0-9]{11}$/i,
+      description: 'License must be 1 letter followed by 11 numbers',
     }
   ],
   IN: [
-    {
-      regex: /^[A-Z]{1}[0-9]{9}$/i,
-      description: 'License must be 1 letter followed by 9 numbers',
-    },
     {
       regex: /^[0-9]{9,10}$/i,
       description: 'License must be 9-10 numbers',
@@ -164,10 +152,6 @@ module.exports = {
     },
   ],
   KS: [
-    {
-      regex: /^([A-Z]{1}[0-9]{1}){2}[A-Z]{1}$/i,
-      description: 'License must be 1 letter then 1 number then 1 letter then 1 number then 1 letter',
-    },
     {
       regex: /^[A-Z]{1}[0-9]{8}$/i,
       description: 'License must be 1 letter followed by 8 numbers',
@@ -218,16 +202,8 @@ module.exports = {
       regex: /(^[A-Z]{1}[0-9]{8}$|^[A-Z]{2}[0-9]{7}$)/i,
       description: 'License must be 1 letter followed by 8 numbers or 2 letters followed by 7 numbers',
     },
-    {
-      regex: /^[0-9]{9}$/i,
-      description: 'License must be 9 numbers',
-    },
   ],
   MI: [
-    {
-      regex: /^[A-Z]{1}[0-9]{10}$/i,
-      description: 'License must be 1 letter followed by 10 numbers',
-    },
     {
       regex: /^[A-Z]{1}[0-9]{12}$/i,
       description: 'License must be 1 letter followed by 12 numbers',
@@ -256,10 +232,6 @@ module.exports = {
       description: 'License must be 1 letter followed by 6 numbers followed by "R"',
     },
     {
-      regex: /^[0-9]{8}[A-Z]{2}$/i,
-      description: 'License must be 8 numbers followed by 2 letters',
-    },
-    {
       regex: /^[0-9]{9}[A-Z]{1}$/i,
       description: 'License must be 9 numbers followed by 1 letter',
     },
@@ -268,7 +240,7 @@ module.exports = {
       description: 'License must be 9 numbers',
     },
     {
-      regex: /^[0-9]{1,3}[A-Z]{1}[0-9]{6}$/i,
+      regex: /^[0-9]{3}[A-Z]{1}[0-9]{6}$/i,
       description: 'License must be 3 numbers + 1 alfanumeric + 6 numbers',
     },
     {
@@ -278,20 +250,12 @@ module.exports = {
   ],
   MT: [
     {
-      regex: /^[A-Z]{1}[0-9]{8}$/i,
-      description: 'License must be 1 letter followed by 8 numbers',
-    },
-    {
       regex: /^[0-9]{13}$/i,
       description: 'License must be 13 numbers',
     },
     {
       regex: /^[0-9]{9}$/i,
       description: 'License must be 9 numbers',
-    },
-    {
-      regex: /^[0-9]{14}$/i,
-      description: 'License must be 14 numbers',
     },
     {
       regex: /^[A-Z]\d(\d|[A-Z])\d{2}[A-Z]{3}\d$/i,
@@ -346,20 +310,8 @@ module.exports = {
       description: 'License must be 1 letter followed by 7 numbers',
     },
     {
-      regex: /^[A-Z]{1}[0-9]{18}$/i,
-      description: 'License must be 1 letter followed by 18 numbers',
-    },
-    {
       regex: /^[0-9]{8,9}$/i,
       description: 'License must be 8-9 numbers',
-    },
-    {
-      regex: /^[0-9]{16}$/i,
-      description: 'License must be 16 numbers',
-    },
-    {
-      regex: /^[A-Z]{8}$/i,
-      description: 'License must be 8 letters',
     },
   ],
   NC: [
@@ -380,16 +332,8 @@ module.exports = {
   ],
   OH: [
     {
-      regex: /^[A-Z]{1}[0-9]{4,8}$/i,
-      description: 'License must be 1 letter followed by 4-8 numbers',
-    },
-    {
-      regex: /^[A-Z]{2}[0-9]{3,7}$/i,
-      description: 'License must be 2 letters followed by 3-7 numbers',
-    },
-    {
-      regex: /^[0-9]{8}$/i,
-      description: 'License must be 8 numbers',
+      regex: /^[A-Z]{2}[0-9]{6}$/i,
+      description: 'License must be 2 letters followed by 6 numbers',
     },
   ],
   OK: [
@@ -444,12 +388,8 @@ module.exports = {
   ],
   SD: [
     {
-      regex: /^[0-9]{6,10}$/i,
-      description: 'License must be 6-10 numbers',
-    },
-    {
-      regex: /^[0-9]{12}$/i,
-      description: 'License must be 12 numbers',
+      regex: /^[0-9]{6,9}$/i,
+      description: 'License must be 6-9 numbers',
     },
   ],
   TN: [
@@ -486,11 +426,11 @@ module.exports = {
   ],
   VA: [
     {
-      regex: /^[A-Z]{1}[0-9]{8,11}$/i,
-      description: 'License must be 1 letter followed by 9-11 numbers',
+      regex: /^[A-Z]{1}[0-9]{8}$/i,
+      description: 'License must be 1 letter followed by 8 numbers',
     },
     {
-      regex: /^[0-9]{9}$/i,
+      regex: /^[0-9]{9}$/,
       description: 'License must be 9 numbers',
     },
   ],
@@ -516,8 +456,12 @@ module.exports = {
       description: 'License must be 7 numbers',
     },
     {
-      regex: /^[A-Z]{1,2}[0-9]{5,6}$/i,
-      description: 'License must be 1-2 letters followed by 5-6 numbers',
+      regex: /^[A-Z]{2}[0-9]{5}$/i,
+      description: 'License must be 2 letters followed by 5 numbers',
+    },
+    {
+      regex: /^[A-Z]{1,2}[0-9]{6}$/i,
+      description: 'License must be 1-2 letters followed by 6 numbers',
     },
     {
       regex: /^[A-Z]\d{6}$/i,
@@ -540,8 +484,8 @@ module.exports = {
   ],
   WY: [
     {
-      regex: /^[0-9]{9,10}$/i,
-      description: 'License must be 9-10 numbers',
+      regex: /^[0-9]{9}$/,
+      description: 'License must be 9 numbers',
     },
   ],
   PR: [
