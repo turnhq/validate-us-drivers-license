@@ -49,9 +49,7 @@ module.exports = {
     )
   },
   CO: {
-    validLicenses: [].concat(
-      twoLettersTwoToFiveNumbers, nineNumbers, oneLetterThreeToSixNumbers
-    ),
+    validLicenses: [].concat(nineNumbers),
     invalidLicenses: [].concat(invalidLicenses, sevenDigitLicense)
   },
   CT: {
