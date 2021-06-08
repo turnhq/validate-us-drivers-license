@@ -253,6 +253,14 @@ module.exports = {
       regex: /^[A-Z]\d(\d|[A-Z])\d{2}[A-Z]{3}\d$/i,
       description: 'ANXNNAAAN MinLength = 9 MaxLength = 9'
     },
+    {
+      regex: /^[A-Z]\d(\d|[A-Z])\d{2}[A-Z]{3}\d$/i,
+      description: 'ANXNNAAAN MinLength = 9 MaxLength = 9'
+    },
+    {
+      regex: /^[a-z]{3}\d{10}$/i,
+      description: 'Three letters and 10 digits',
+    },
   ],
   NE: [
     {
