@@ -196,7 +196,7 @@ module.exports = {
   },
   MT: {
     validLicenses: [].concat(
-      nineNumbers, '1234567890123', 'A1B34CDE5', 'A1234CDE5'
+      nineNumbers, '1234567890123', 'A1B34CDE5', 'A1234CDE5', 'AAA0000001234',
     ),
     invalidLicenses: [].concat(
       invalidLicenses, twoLettersTwoToFiveNumbers, oneLetterThreeToSixNumbers,
