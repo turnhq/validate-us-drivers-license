@@ -73,8 +73,8 @@ module.exports = {
   ],
   DE: [
     {
-      regex: /^\d{3,7}$/,
-      description: "License must be 3-7 numbers",
+      regex: /^\d{1,7}$/,
+      description: "License must be 1-7 numbers",
     },
   ],
   DC: [
@@ -268,10 +268,6 @@ module.exports = {
       description: "ANXNNAAAN MinLength = 9 MaxLength = 9",
     },
     {
-      regex: /^[A-Z]\d(\d|[A-Z])\d{2}[A-Z]{3}\d$/i,
-      description: "ANXNNAAAN MinLength = 9 MaxLength = 9",
-    },
-    {
       regex: /^[a-z]{3}\d{10}$/i,
       description: "Three letters and 10 digits",
     },
@@ -394,7 +390,7 @@ module.exports = {
   SC: [
     {
       regex: /^[0-9]{5,10}$/i,
-      description: "License must be 5-11 numbers",
+      description: "License must be 5-10 numbers",
     },
   ],
   SD: [
