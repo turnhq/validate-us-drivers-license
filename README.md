@@ -8,7 +8,7 @@ Validate US driver's license numbers against all 50 state formats.
 ## Install
 
 ```bash
-npm install validate-us-drivers-license
+npm install @turnai/validate-us-drivers-license
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ const {
   validateUSDriversLicense,
   supportedStates,
   driversLicenseRegex
-} = require('validate-us-drivers-license');
+} = require('@turnai/validate-us-drivers-license');
 ```
 
 ### `isValidUSLicense(license, state)`

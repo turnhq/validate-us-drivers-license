@@ -2,7 +2,7 @@
  * List of supported US States as an array
  *
  * @example
- * const { supportedStates } = require('validate-us-drivers-license')
+ * const { supportedStates } = require('@turnai/validate-us-drivers-license')
  *
  * const isSupported = currentStates.includes('IL')
  * console.log(isSupported) // true

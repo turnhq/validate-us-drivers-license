@@ -13,7 +13,7 @@
  * array.
  *
  * @example
- * const { validateUSDriversLicense } = require('validate-us-drivers-license')
+ * const { validateUSDriversLicense } = require('@turnai/validate-us-drivers-license')
  *
  * const validLicense = validateUSDriversLicense('1234567', 'AL')
  * console.log(validLicense.valid) // true

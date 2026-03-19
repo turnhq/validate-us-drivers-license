@@ -1,5 +1,5 @@
 {
-  "name": "validate-us-drivers-license",
+  "name": "@turnai/validate-us-drivers-license",
   "version": "0.0.2",
   "description": "Validate US driver's license numbers against all 50 state formats",
   "main": "src/index.js",
@@ -30,6 +30,10 @@
     "name": "Turn Technologies"
   },
   "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "devDependencies": {
     "babel-loader": "^7.1.4",
     "babel-plugin-add-module-exports": "^0.2.1",

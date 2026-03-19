@@ -9,7 +9,7 @@
  * @returns {boolean} Whether the license is valid or not.
  *
  * @example
- * const { isValidUSLicense } = require('validate-us-drivers-license')
+ * const { isValidUSLicense } = require('@turnai/validate-us-drivers-license')
  *
  * const valid = isValidUSLicense('1234567', 'AL')
  * console.log(valid) // true

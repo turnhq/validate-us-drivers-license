@@ -1,1 +1,1 @@
-declare module 'validate-us-drivers-license';
+declare module '@turnai/validate-us-drivers-license';
