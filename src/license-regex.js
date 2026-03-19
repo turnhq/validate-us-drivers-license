@@ -389,8 +389,8 @@ module.exports = {
   ],
   SC: [
     {
-      regex: /^[0-9]{5,10}$/i,
-      description: "License must be 5-10 numbers",
+      regex: /^[0-9]{6,11}$/i,
+      description: "License must be 6-11 numbers (new: 9, old format: 6-11)",
     },
   ],
   SD: [

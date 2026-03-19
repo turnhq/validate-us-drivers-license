@@ -3,7 +3,7 @@
 # For GitHub Packages: set registry-url to https://npm.pkg.github.com,
 # use NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}, and scope the package name in package.json.
 
-name: Node.js Package
+name: Publish to NPM
 
 on:
   release:
