@@ -1,7 +1,6 @@
 {
   "name": "validate-us-drivers-license",
   "version": "0.0.2",
-  "private": true,
   "description": "Validate US driver's license numbers against all 50 state formats",
   "main": "src/index.js",
   "types": "index.d.ts",
